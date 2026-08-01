@@ -1,0 +1,64 @@
+specification: API Commons Plans
+specificationVersion: '0.1'
+generated: '2026-07-21'
+method: searched
+provider: Risklytics
+providerId: risklytics
+created: '2026-07-21'
+modified: '2026-07-21'
+tags:
+- Risk
+- Wildfire
+- Insurance
+description: >-
+  Risklytics prices the Ember API on a usage/quota model. An Individual Beta tier includes a fixed
+  monthly allowance of property scores with a personal API key and usage dashboard, plus optional
+  prepaid credits for overage; Teams/Carriers & MGAs are custom-priced by volume under annual
+  contracts. Coverage is currently limited to California properties.
+sources:
+- https://www.risklytics.ai/pricing
+plans:
+- id: risklytics-individual-beta
+  name: Individual Beta
+  type: subscription
+  description: Entry tier for individual developers and small evaluation teams; includes a personal API key and usage dashboard.
+  entries:
+  - label: Monthly subscription
+    name: individual_beta
+    type: recurring
+    timeFrame: month
+    unit: 1
+    price: $20/month
+    userMultiplied: false
+  - label: Included property scores
+    name: included_scores
+    type: metered
+    metric: property_score
+    limit: 2500
+    timeFrame: month
+    unit: 1
+    price: included
+    userMultiplied: false
+  - label: Prepaid overage credits
+    name: prepaid_credits
+    type: metered
+    metric: property_score
+    limit: -1
+    timeFrame: usage
+    unit: 1
+    price: prepaid packs from $25 to $110+
+    userMultiplied: false
+- id: risklytics-teams-carriers
+  name: Teams / Carriers & MGAs
+  type: custom
+  description: Custom-priced by volume and implementation scope under annual contracts for portfolio screening.
+  entries:
+  - label: Custom volume pricing
+    name: custom
+    type: metered
+    metric: property_score
+    limit: -1
+    timeFrame: usage
+    unit: 1
+    price: custom
+    userMultiplied: false

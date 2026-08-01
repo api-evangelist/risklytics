@@ -1,0 +1,25 @@
+# Risklytics
+
+> Risklytics is an AI-native property and catastrophe risk company (Y Combinator Summer 2026, San Francisco). Its Ember API returns per-structure wildfire/flood/wind/earthquake/debris risk scores, modeled annual loss, and retrofit-impact modeling for individual homes, used for insurance risk selection and portfolio triage. Currently California-only; production model ember-1.3.0-firewall. Access is via a personal API key issued through the platform dashboard. No public OpenAPI or developer portal is published.
+
+## APIs
+
+- [Ember API](https://www.risklytics.ai/pricing): Property risk scoring, expected annual loss, and retrofit evaluation. Base URL https://api.risklytics.ai. Authenticated with a personal API key.
+
+## Docs
+
+- [Documentation](https://www.risklytics.ai/docs): Developer docs entry point (request schemas and API keys live in the signed-in platform).
+- [Methodology](https://www.risklytics.ai/methodology): Physics-based hazard simulation, per-structure digital twins, component failure modeling, and closed-loop validation.
+- [Insurability / Retrofit simulator](https://www.risklytics.ai/insurability): How structural and defensible-space retrofits affect modeled insurability scores.
+- [Pricing](https://www.risklytics.ai/pricing): Individual Beta ($20/mo, 2,500 scores) and custom Teams/Carriers & MGAs plans; prepaid overage credits.
+- [Terms of Service](https://www.risklytics.ai/terms): Terms governing Ember API use.
+
+## Platform
+
+- [FireCast platform](https://platform.risklytics.ai/): Signed-in dashboard for API keys, request schemas, usage, and billing.
+
+## Repo artifacts
+
+- authentication/risklytics-authentication.yml: API-key authentication profile (searched).
+- plans/risklytics-plans-pricing.yml: Ember API pricing tiers (searched).
+- security/risklytics-domain-security.yml: TLS/HSTS/DNS security posture of Risklytics hosts (probed).

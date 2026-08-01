@@ -1,0 +1,18 @@
+generated: '2026-07-21'
+method: searched
+source: https://www.risklytics.ai/pricing
+docs: https://www.risklytics.ai/docs
+summary:
+  types: [apiKey]
+  api_key_in: [header]
+  note: >-
+    Ember API access is authenticated with a personal API key issued through the signed-in platform
+    dashboard (platform.risklytics.ai). Request schemas, keys, usage, and billing live behind login;
+    no public OpenAPI or OAuth surface is published. Key placement (header) is documented in-platform;
+    recorded here as the conventional Authorization/API-key header pending a public spec.
+schemes:
+- name: apiKey
+  type: apiKey
+  in: header
+  description: Personal API key issued per account through the platform dashboard.
+  sources: [https://www.risklytics.ai/pricing, https://www.risklytics.ai/docs]
