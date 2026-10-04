@@ -52,12 +52,12 @@ tags:
 - Company
 - Insurance
 - Insurtech
-- Risk
+- Risk Management
 - Wildfire
 - Property
 - Catastrophe
 - Analytics
-- Machine-Learning
+- Machine Learning
 - Underwriting
 tags_raw:
 - Company
@@ -70,10 +70,16 @@ tags_raw:
 - Analytics
 - Machine Learning
 - Underwriting
+- Machine-Learning
 apis:
 - aid: risklytics:risklytics-ember-api
   name: Ember API
   tags:
+  - Risk Management
+  - Wildfire
+  - Property
+  - Insurance
+  tags_raw:
   - Risk
   - Wildfire
   - Property
